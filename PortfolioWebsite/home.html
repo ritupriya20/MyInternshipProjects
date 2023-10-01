@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritu - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nvbarstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+<style>
+    .links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:50px;
+    }
+    .heading{
+            font-family: 'Skranji', cursive;
+            letter-spacing: 3px;
+            color: #260e4ce1;
+            font-size: 2.3em;
+            margin-left: 53px;
+            margin-top: -40px;
+        }
+    .links img{
+        height: 300px;
+        width:270px;
+    }
+    
+
+        .link1 img,.link2 img,.link3 img,.link4 img {
+            display: block;
+            border-radius: 40%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .link1:hover,.link2:hover,.link3:hover,.link4:hover {
+            transform: scale(1.1);
+        }
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="container1">
+            <h1 class="logo">Ritu's Portfolio</h1>
+            <nav class="nvbar">
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact_me.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="mainDiv">
+            <h2>Welcome to my Portfolio</h2>
+            <div class="container">
+                <div class="left">Hi! My name is <span style="color: red;">Ritu Priya</span>..
+                and I am pursuing Computer Science and Engineering from New Horizon College of Engineering,Bangalore. <br>
+                <span id="element"></span></div>
+                <div class="right"><img src="picture.png" alt="not available"></div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <h1 class="heading">Quick Links</h1>
+        <hr>
+        <div class="links">
+            <div class="link1">
+                <a href="about.html#edu1"><img src="education.jpeg" alt="education link"></a>
+                <a href="about.html#edu1 " style="text-decoration: none;color:black;font-family: Poppins; ;" >
+                    <p style="text-align: center;">Education</p></a>
+            </div>
+            <div class="link2">
+            <a href="about.html#skills"><img src="skills.png" alt="skills link"></a>
+            <a href="about.html#skills " style="text-decoration: none;color:black;font-family: Poppins; ;" >
+                <p style="text-align: center;">Skills</p></a>
+            </div>
+            <div class="link3">
+                <a href="portfolio.html"><img src="projects.png" alt="projects link"></a>
+                <a href="portfolio.html"style="text-decoration: none;color:black;font-family: Poppins; ;" >
+                    <p style="text-align: center;">Projects</p></a>
+            </div>
+            <div class="link4">
+                <a href="contact_me.html"><img src="contact.jpeg" alt="contact link"></a>
+                <a href="contact_me.html"style="text-decoration: none;color:black;font-family: Poppins; ;" >
+                    <p style="text-align: center;">Contact me</p></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Ritu</p>
+        </div>
+    </footer>
+    <button id="scrollToTop" title="Go to top">&#9650; Top</button>
+
+    <script>
+        function handleScroll() {
+            var scrollToTopButton = document.getElementById('scrollToTop');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        }        
+        function scrollToTop() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0;
+        }
+        window.addEventListener('scroll', handleScroll);
+
+        document.getElementById('scrollToTop').addEventListener('click', scrollToTop);
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ["I'm passionate about coding and creating innovative solutions.",
+    "Feel free to explore my portfolio and get in touch with me!"],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+
+</html>
+
+

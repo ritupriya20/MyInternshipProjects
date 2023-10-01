@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="nvbarstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+<style>
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px;
+    }
+
+    
+
+    .contact-info p {
+        font-size: 1.2em;
+        color: #666;
+    }
+    .contact-info{
+        margin-left: 24px;
+    }
+
+    .contact-form {
+        background-color: #f1f1f4;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .contact-form input, .contact-form textarea, .contact-form button {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+    }
+    .or{
+        margin:5em;
+    }
+
+    .contact-form button {
+        background-color: #8a3fff;
+        color: #fff;
+        cursor: pointer;
+    }
+    ul{
+        overflow: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
+    }
+    li{
+        float: left;       
+        list-style: none;
+        margin:5px 5px;
+        padding-top: 6px;
+        
+        
+    }
+    .social-links {
+    list-style: none; 
+    padding: 5px; 
+}
+.social-link:hover{
+    transform: scale(1.1);
+}
+.social-link {
+    display: inline-block; 
+    padding-left:23px;
+    
+}
+button:hover{
+    background-color:#976cdd;
+    color:red;
+}
+</style>
+</head>
+<body>
+<div class="container1">
+<header>
+    <h1 class="logo">Ritu's Portfolio</h1>
+    <nav class="nvbar">
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact_me.html">Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="contact-container">
+    <div id="success-message" style="color: red;"></div>
+    <div class="contact-form">
+        <h2>Contact Form</h2>
+        <form id="contactForm" method="POST" action="data.php">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+            <p style="color: red;">*Upon successful submission of the form you will be redirected to home page.</p>
+        </form>
+    </div>
+    <h3 class="or">OR</h3>
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: ritupriya000@gmail.com</p>
+        <p>Phone: +918999988765</p>
+        <ul class="social-links">
+            <li class="social-link"><a href="www.linkedin.com/in/ritu-p-549898248" target="_blank"><img src="linkedin.png" alt="Not Available" height="40px"width="40px"></a></li>
+            <li class="social-link"><a href="https://twitter.com/ritupriyarp" target="_blank"><img src="twitter.png" alt="Not Available"height="40px"width="40px"></a></li>
+        </ul>
+    </div>
+</div>
+
+</div>
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Ritu</p>
+    </div>
+</footer>
+<button id="scrollToTop" title="Go to top">&#9650; Top</button>
+
+    <script>
+        function handleScroll() {
+            var scrollToTopButton = document.getElementById('scrollToTop');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        }        
+        function scrollToTop() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0;
+        }
+        window.addEventListener('scroll', handleScroll);
+
+        document.getElementById('scrollToTop').addEventListener('click', scrollToTop);
+    </script>
+</body>
+</html>
