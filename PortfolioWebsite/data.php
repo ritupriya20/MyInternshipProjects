@@ -17,12 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         mysqli_close($connection);
         header("Location: home.html"); // Redirect to a success page
         exit();
-    } else {
+    } 
+    else {
         echo "Error: " . mysqli_error($connection);
     }
-
     mysqli_close($connection);
-} else {
+} 
+else {
     echo "Invalid request.";
 }
 ?>
