@@ -176,7 +176,7 @@ margin-top:50px;
     <a class="logo" href="index.php">R</a>
     <div class="categories">
         <a href="#apparels">Apparel & Accessories</a>
-        <a href="electronics">Electronics & Gadgets</a>
+        <a href="#electronics">Electronics & Gadgets</a>
     </div>
     <div class="left">
       <img class="search-img" src="search.png" alt="not avail">
