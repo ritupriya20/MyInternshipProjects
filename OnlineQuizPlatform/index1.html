@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz with Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="question-number"></div><hr id="line">
+    <div class="quiz-container" id="quiz-container">
+        <div id="timer"></div> 
+        <br>
+        <div id="question"></div>
+        <div id="options"></div>
+        <br>
+        <button id="next-btn" onclick="nextQuestion()">Next</button>
+        <button id="submit-btn" onclick="submitQuiz()" style="display:none;">Submit quiz</button>
+        <form id="quiz-form" action="save_leaderboard.php" method="post">
+            <input type="hidden" name="name" value="">
+            <input type="hidden" name="score" value="">
+            <input type="hidden" name="quizType" value="">
+            <input type="hidden" name="completionTime" value=""> 
+            <button type="submit" id="submit-btn1" style="display:none;">Submit</button>
+        </form>
+    </div>
+    <div id="result" style="display:none;"></div>
+    <br><br>
+    <h2 id="heading" style="display:none;">Analysis</h2> <br>
+    <div id="analysis" style="display:none;"></div>
+    <button id="gotohome" style="display:none;"><a href="select.php">Go to home</a></button>
+    <script src="timer.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.quiz-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    background-color: #deedfb;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+.correct {
+    background-color: rgb(187, 241, 187);
+}
+
+.incorrect {
+    background-color: rgb(238, 177, 177);
+}
+#result {
+    display: none;
+    margin: 20px; 
+    padding: 10px;
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    font-size: 20px;
+    color: #007bff; 
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#score{
+    color:green;
+}
+#analysis {
+    display: none;
+    margin: 20px; 
+    padding: 10px;
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+#question-number {
+    font-size: 27px; 
+    color: #007bff; 
+    font-weight: bold; 
+    margin-left:35px;
+    margin-top:40px; 
+    margin-bottom: 0px; 
+    
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#next-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#next-btn:hover {
+    background-color: #0056b3;
+}
+
+#submit-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#submit-btn:hover {
+    background-color: #218838;
+}
+
+#heading{
+    margin-left:20px;
+}
+
+#gotohome {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#gotohome a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#gotohome:hover {
+    background-color: #0056b3;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff; 
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.option{
+    cursor: pointer;
+}
+
+
+
